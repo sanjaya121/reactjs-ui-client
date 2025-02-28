@@ -1,11 +1,12 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, RouterProvider } from "react-router-dom";
 import "./App.css";
-import Login from "./components/auth/login/Login";
+import router from "./app/router/Routes";
+
 
 function App() {
   return (
     <div className="cointainer">
-     <Outlet/>
+    <RouterProvider router={router}/>
     </div>
   );
 }
