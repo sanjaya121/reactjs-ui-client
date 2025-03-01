@@ -1,0 +1,17 @@
+.home-content {
+    border: 1px solid yellowgreen   ;
+  .relative-position {
+    border: 2px solid red;
+    position: relative;
+    block-size: 200px;
+    inset-block-start: 50px;
+  }
+
+  .absolute-position {
+    border: 2px solid blue;
+    position: absolute;
+    inset-block-start: 20px;
+    block-size: 200px;
+  }
+
+}

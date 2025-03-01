@@ -1,0 +1,24 @@
+// @import '../../../reset.scss';
+.navigation-bar {
+  .navigation {
+    // border: 1px solid red;
+    .nav-link {
+    //   border: 1px solid yellow;
+      list-style: none;
+    //   border: 1px solid green;
+
+   
+    }
+
+    .dropdown{
+        .dropdown:hover{
+            .dropdown-content{
+                display: block;
+            }
+        }
+        .dropdown-content{
+            display: none;
+        }
+    }
+  }
+}

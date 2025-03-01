@@ -1,5 +1,18 @@
-const Home = () => {
-  return <h1>Home</h1>;
-};
+import { useEffect } from "react";
 
+
+
+
+const Home = () => {
+
+
+
+  useEffect(()=>{
+document.title="Saanbi Estore:: Home"
+
+  })
+
+
+  return <div className="home-componenet"></div>;
+};
 export default Home;
