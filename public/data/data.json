@@ -1,0 +1,35 @@
+[{
+	"name": "hero Product",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"hero": "OMG This just came out today!",
+	"image": "https://i.imgur.com/ZKGofuB.jpeg"
+},{
+	"name": "Product 1",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"info": "This is the latest and greatest product from Derp corp.",
+	"image": "https://i.imgur.com/vzrTgUR.jpeg"
+},{
+	"name": "Product 2",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"offer": "BOGOF",
+	"image": "https://i.imgur.com/Wv2KTsf.jpeg"
+},{
+	"name": "Product 3",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"image": "https://i.imgur.com/BZrIEmb.jpeg"
+},{
+	"name": "Product 4",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"offer": "No srsly GTFO",
+	"image": "https://i.imgur.com/kKc9A5p.jpeg"
+},{
+	"name": "Product 5",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"image": "https://i.imgur.com/QkIa5tT.jpeg"
+}]

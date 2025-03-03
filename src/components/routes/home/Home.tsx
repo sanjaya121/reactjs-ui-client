@@ -1,18 +1,22 @@
 import { useEffect } from "react";
-
-
+import Products from "./products/Products";
+import ProductCatalog from "./products/ProductCatalog";
 
 
 const Home = () => {
 
 
+  useEffect(() => {
+    document.title = "Saanbi Estore:: Home";
+  });
 
-  useEffect(()=>{
-document.title="Saanbi Estore:: Home"
+  return (
+    <div className="home-componenet container">
+     
+        <ProductCatalog></ProductCatalog>
 
-  })
-
-
-  return <div className="home-componenet"></div>;
+    
+    </div>
+  );
 };
 export default Home;

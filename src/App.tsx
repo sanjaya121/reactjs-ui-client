@@ -1,10 +1,18 @@
-import { BrowserRouter, Outlet, Route, Router, RouterProvider, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  Outlet,
+  Route,
+  Router,
+  RouterProvider,
+  Routes,
+} from "react-router-dom";
 import "./App.css";
 import router from "./app/router/Routes";
 import { useEffect } from "react";
 import Navigation from "./components/common/navigation/Navigation";
 import Header from "./components/common/header/Header";
 import Home from "./components/routes/home/Home";
+import NotFound from "./components/routes/not-found/NotFound";
 
 function App() {
   /// sort Array
@@ -36,7 +44,6 @@ function App() {
   };
 
   useEffect(() => {
-   
     Truthy();
   });
 
@@ -46,13 +53,10 @@ function App() {
         <Header />
       </div>
       <div className="main-content">
-
-      {/* <Routes>
-        <Route path="/" element={<Home/>}>
-          
-        </Route>
-      </Routes> */}
-  
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="*" element={<NotFound/>}></Route>
+        </Routes>
       </div>
       <div className="footer"></div>
     </div>

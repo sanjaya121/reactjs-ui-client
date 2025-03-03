@@ -4,6 +4,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
 import './navaccount.scss'
+import { Badge } from '@mui/material';
 
 const NavAccount=()=>{
 
@@ -18,7 +19,10 @@ const NavAccount=()=>{
                     <FavoriteBorderIcon/>
                 </div>
                 <div className="shopping-cart icon">
+                    <Badge badgeContent={6}>
                     <ShoppingBagIcon/>
+                    </Badge>
+                
                 </div>
          
             </div>

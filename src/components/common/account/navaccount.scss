@@ -1,18 +1,19 @@
-
-
-.navbar-account{
- 
-    .account-icon-container{
- 
-        .icons{
-            svg{
-                fill:#fff;
-            }
-         display: flex;
-         flex-direction: row;
-            .icon{
-                margin: 0 20px;
-            }
-        }
+.navbar-account {
+  .account-icon-container {
+    .icons {
+      svg {
+        fill: #fff;
+      }
+      display: flex;
+      flex-direction: row;
+      .icon {
+        margin: 0 20px;
+      }
     }
+  }
+  .shopping-cart{
+    .MuiBadge-badgez{
+      color: #fff;
+    }
+  }
 }
