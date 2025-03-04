@@ -5,8 +5,15 @@ import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
 import './navaccount.scss'
 import { Badge } from '@mui/material';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../../store/store';
+import { Link } from 'react-router-dom';
+
 
 const NavAccount=()=>{
+
+    const cartItems =useSelector((state:RootState)=>state.cart.cart)
+    console.log(cartItems,"Cart ITems")
 
     return(
         <div className="navbar-account">
@@ -19,8 +26,11 @@ const NavAccount=()=>{
                     <FavoriteBorderIcon/>
                 </div>
                 <div className="shopping-cart icon">
-                    <Badge badgeContent={6}>
-                    <ShoppingBagIcon/>
+                    <Badge className="sanjaya"badgeContent={cartItems.length}>
+                        <Link to="/shopping-cart">
+                        <ShoppingBagIcon />
+                        </Link>
+                   
                     </Badge>
                 
                 </div>

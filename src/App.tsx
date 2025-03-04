@@ -13,6 +13,7 @@ import Navigation from "./components/common/navigation/Navigation";
 import Header from "./components/common/header/Header";
 import Home from "./components/routes/home/Home";
 import NotFound from "./components/routes/not-found/NotFound";
+import Cart from "./components/routes/cart/Cart";
 
 function App() {
   /// sort Array
@@ -48,13 +49,14 @@ function App() {
   });
 
   return (
-    <div className="cointainer">
+    <div className="">
       <div className="header">
         <Header />
       </div>
-      <div className="main-content">
+      <div className="main-content container">
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/shopping-cart" element={<Cart/>}></Route>
           <Route path="*" element={<NotFound/>}></Route>
         </Routes>
       </div>
