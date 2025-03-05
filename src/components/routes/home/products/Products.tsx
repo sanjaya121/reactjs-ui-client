@@ -26,7 +26,7 @@ const Products = () => {
         {products.map((product, index) => (
           <div className="col-lg-3 my-3" key={index}>
          
-            <div className="card" style={{ width: "18rem" }} >
+            <div className="card d-flex justify-content-center" style={{ width: "18rem" }} >
               <img src={product.image} />
               <div className="card-body">
                 <h2>{product.name}</h2>
@@ -34,7 +34,7 @@ const Products = () => {
               </div>
               <Link to={`/products/${product.id}`}>
               <button
-                className="btn btn-primary"
+                className="btn btn-primary m-2"
                 onClick={() => addProductsToCart(product)}
               >
                View Details
