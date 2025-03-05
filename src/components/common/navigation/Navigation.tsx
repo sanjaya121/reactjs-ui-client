@@ -40,6 +40,9 @@ const Navigation = () => {
                             <a className="dropdown-item" href="#">
                               Men's
                             </a>
+                            <Link className="nav-link active" to="/js-practice">
+                              JS Practice
+                            </Link>
                           </li>
                           <li>
                             <a className="dropdown-item" href="#">

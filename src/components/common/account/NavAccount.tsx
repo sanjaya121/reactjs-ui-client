@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 const NavAccount=()=>{
 
     const cartItems =useSelector((state:RootState)=>state.cart.cart)
-    console.log(cartItems,"Cart ITems")
+    // console.log(cartItems,"Cart ITems")
 
     return(
         <div className="navbar-account">

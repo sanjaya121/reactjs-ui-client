@@ -3,6 +3,7 @@ import { AppDispatch, RootState } from "../../../../store/store";
 import { useEffect } from "react";
 import { fetchProducts } from "../../../../redux/productsSlice";
 import { addToCard } from "../../../../redux/addToCartSlice";
+import { Link } from "react-router-dom";
 const Products = () => {
   const dispatch = useDispatch<AppDispatch>();
 
@@ -24,19 +25,24 @@ const Products = () => {
       <div className="row">
         {products.map((product, index) => (
           <div className="col-lg-3 my-3" key={index}>
-            <div className="card" style={{ width: "18rem" }}>
+         
+            <div className="card" style={{ width: "18rem" }} >
               <img src={product.image} />
               <div className="card-body">
                 <h2>{product.name}</h2>
                 <p className="card-text">{product.detail}</p>
               </div>
+              <Link to={`/products/${product.id}`}>
               <button
                 className="btn btn-primary"
                 onClick={() => addProductsToCart(product)}
               >
-                Add to Cart
+               View Details
               </button>
+              </Link>
             </div>
+            
+        
           </div>
         ))}
       </div>

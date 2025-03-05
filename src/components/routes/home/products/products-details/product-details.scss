@@ -1,0 +1,12 @@
+.box {
+  height: 100px;
+  border: 1px solid #fcd;
+}
+div.fixed {
+  position: fixed;
+  border: 2px solid red;
+}
+.static {
+  position: static;
+  border: 2px solid green;
+}
